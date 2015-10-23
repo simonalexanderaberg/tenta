@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="432a04cc-a19f-4550-ae98-1bd2b3f4cd17" name="UseCase" linkedPackageId="9f0960de-3930-4adf-80f3-628d28f67e3e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="cbd1199f-0858-492e-b90c-04bc7ce0ea52">
+      <profileInstance Id="5984b398-a979-49bc-ad33-f28d3dde914b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a7737031-20a6-45e1-9722-3e8c30f757ac">
+      <profileInstance Id="e5b3438f-32c9-4d93-a2f9-b365bc06d4aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6ff42943-a240-43fc-9093-c0d8c6ebc0d2" name="Consumer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e70b216c-49f9-4d99-bc6a-1f9860895703" />
+        <targetEnds>
+          <association Id="daba260e-18d2-46b2-8b2a-71ee05e0d2ff" isDerived="false" sourceEndRoleName="Consumer" targetEndRoleName="Choose SF/Netflix" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3b566620-2345-428d-835f-ff9cbf98aa47" LastKnownName="Choose SF/Netflix" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc00ba7c-a569-4edb-8cdb-fd63acb557e3" name="Consumer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06180f09-31f1-4c51-a1f4-b5601f6f9c62" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="619d5bb6-e678-454e-937a-8025636fc1d8" name="Choose SF/Netflix" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8179622b-3c5f-43fc-9611-a820b604e8c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="72b244c7-b887-4e0e-b1b1-da8bcd2adc1c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2d964664-9efd-4d84-b730-3924c30a311e" name="Producer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="38b049fc-4712-4641-a8b1-ca3a72cbb03a" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" name="MovieSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="21b4b904-be1c-4abb-a875-902e1f69cd5d" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="48c4df27-4c96-4389-b135-d02ca4e89bdf" name="Select movie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eca5e175-ccc3-4b0d-8ffc-f11d4e100ffd" />
+        <targetEnds>
+          <association Id="fefe8a6c-a657-4f23-8baf-95227cd67c70" isDerived="false" sourceEndRoleName="Select movie" targetEndRoleName="Payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="86677d57-c340-45f5-9852-012e9d17f4b5" LastKnownName="Payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d735de4-90f2-40f9-be8c-d7cdc9c2b2e2" name="Select movie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cc96805e-eaa1-4957-ab07-885355123ded" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b6da698-7271-46dd-b28e-e577f2a9c568" name="Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d11840b-9458-4de8-bb7e-9b0975681961" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="908d3407-5c45-4d9c-bd30-8f94ca31293d" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" LastKnownName="MovieSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3b566620-2345-428d-835f-ff9cbf98aa47" name="Choose SF/Netflix" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c88c27da-08d0-4f7e-8f66-d43c91118da9" />
+        <targetEnds>
+          <association Id="57aabc5b-f482-488b-a3e5-18dccb26b749" isDerived="false" sourceEndRoleName="Choose SF/Netflix" targetEndRoleName="Select movie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48c4df27-4c96-4389-b135-d02ca4e89bdf" LastKnownName="Select movie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="585b1603-535e-4ada-9228-2e2e915a9fc7" name="Choose SF/Netflix" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93308998-8ed9-4e4e-844b-9ed02a6084c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39dc6dd2-b442-404a-8757-6c306e8e88d1" name="Select movie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1d12585a-eccc-452a-9868-6294ffa06ad6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d9899e86-090d-4809-8709-fbc4cbefbbd9" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" LastKnownName="MovieSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="86677d57-c340-45f5-9852-012e9d17f4b5" name="Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c95253b1-8e33-4bb8-8cf6-3e30aca0f937" />
+        <suppliersInternal>
+          <dependency Id="b7ec005b-4c0d-4ef9-b3db-b7853a52b47c">
+            <actorMoniker Id="2d964664-9efd-4d84-b730-3924c30a311e" LastKnownName="Producer" />
+            <elementDefinition Id="f1960ef0-b108-4437-a286-0caf0cfdcb01" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="e17c87a7-1b7a-4bfc-9cf4-a9b31f8d2d12" isDerived="false" sourceEndRoleName="Payment" targetEndRoleName="Watch movie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f5fe62a8-79b3-4a01-b373-be101297a383" LastKnownName="Watch movie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2401f68-7228-45e4-a0f9-affb56b3089b" name="Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="424c210b-2c9a-4424-93b1-30af68696220" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96b67f5f-48a8-4bb9-8fa6-f296fb0335ab" name="Watch movie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ff25bc88-2a8e-4abc-afe8-358dec232303" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="70fcf1a7-aad3-4278-a139-1c271e80802a" />
+          </association>
+          <association Id="f55c5dbe-62dc-4381-9cbf-3dcde2fe52a0" isDerived="false" sourceEndRoleName="Payment" targetEndRoleName="UseCase3" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fb4e5256-425f-4d75-82b5-b218a4e45e9f" LastKnownName="Cancel purchase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05fc702b-1bcc-4078-b0a2-8330e5b78625" name="Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26975769-286f-4381-8e6a-7cd03b82a45f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab362cd2-a78d-46b2-8e90-82cf46df8f95" name="UseCase3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b13020de-5ffd-4f25-92d7-4adce631ff00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9eab43b4-d148-45b2-99bf-448a9b112f29" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" LastKnownName="MovieSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f5fe62a8-79b3-4a01-b373-be101297a383" name="Watch movie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6b8b4c4-9bcb-4202-9e65-7b91c438585a" />
+        <subjects>
+          <subsystemMoniker Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" LastKnownName="MovieSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fb4e5256-425f-4d75-82b5-b218a4e45e9f" name="Cancel purchase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad1aec0e-2c3e-486e-9e71-0844dec5660a" />
+        <subjects>
+          <subsystemMoniker Id="c0c6675a-be71-4432-84ae-9b98f80eadb2" LastKnownName="MovieSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9f0960de-3930-4adf-80f3-628d28f67e3e" name="ModelingProject">
+    <elementDefinition Id="828f322e-e178-41a4-8f48-3387e94745a2" />
+  </package>
+</useCaseModelRoot>
